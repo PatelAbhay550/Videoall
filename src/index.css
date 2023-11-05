@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  background-light: --var("#606C38");
+  background-dark: --var("#283618");
+  text: --var("#FEFAE0");
+  buttons: --var("#BC6C25");
+}
+
+a,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+svg path {
+  stroke: #fff;
+}
+.nav {
+  background-color: #222;
+  border-bottom: 1px solid #9999994e;
+  color: #fff;
+  backdrop-filter: blur(20px);
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+.nav.scroll-shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav input {
+  color: #000;
+  padding-left: 30px;
+  padding-right: 35px;
+  width: 320px;
+  border: 1px solid #a8a8a8;
+}
+.nav li {
+  transition: all 0.3s ease;
+}
+.nav li:hover {
+  color: #999;
+}
+.cont {
+  color: #fff;
+}
+.leftn {
+  position: relative;
+}
+.searchicon {
+  position: absolute;
+  top: 20px;
+  display: block;
+  left: 50px;
+}
+.closeicon {
+  position: absolute;
+  top: 20px;
+
+  right: 10px;
+}
+.more {
+  display: none;
+}
+.cont {
+  display: flex;
+  align-items: center;
+}
+input::placeholder {
+  user-select: none;
+  font-weight: 500;
+}
+@media (max-width: 425px) {
+  .nav {
+    width: 100vw;
+    overflow: hidden;
+    align-items: center;
+    padding: 5px 10px;
+  }
+  .nav input {
+    display: none;
+  }
+  .closeicon {
+    display: none;
+  }
+  .middlen {
+    display: none;
+  }
+  .searchicon {
+    font-size: 25px;
+    top: 10.5px;
+    line-height: 36px;
+  }
+  .more {
+    display: block;
+  }
+  .leftm {
+    display: none;
+  }
+}

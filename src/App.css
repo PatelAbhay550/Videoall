@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  background-color: rgba(0, 0, 0, 0.298);
+  backdrop-filter: blur(20px);
+}
+.nav ul {
+  color: #fff;
+}
+.nav .rightn {
+  color: #fff;
+}
+.nav .leftn {
+  color: beige;
+}
+.nav .leftn input {
+  box-shadow: 0px 1px 1px 1px #1a1a1a76;
+  background-color: rgba(0, 0, 0, 0.46);
+  padding-left: 10px;
+  backdrop-filter: blur(20px);
+  border: none;
+}
+.leftn input::placeholder {
+  padding-left: 10px;
+}
+.searchicon {
+  position: absolute;
+}
