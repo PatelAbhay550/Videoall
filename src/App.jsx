@@ -1,4 +1,5 @@
 import React from "react";
+import { Analytics } from "@vercel/analytics/react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Explore from "./pages/Explore";
 import Trending from "./pages/Trending";
@@ -17,6 +18,7 @@ const App = () => {
         <div className="overall">
           <div className="leftm">
             <Leftmenu />
+            <Analytics />
           </div>
           <div className="cont">
             <Routes>

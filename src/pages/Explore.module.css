@@ -2,6 +2,7 @@
   width: 85vw;
   margin-top: 106px;
   margin-bottom: 10px;
+  overflow: hidden;
   margin-left: 17.5vw;
 }
 body {
@@ -12,18 +13,22 @@ body {
   height: 45vh;
   gap: 20px;
   display: flex;
-  overflow: hidden;
+  margin-bottom: 30px;
+  /* overflow: hidden; */
 }
 .videodiv {
   width: 25vw;
-  height: 80%;
-  overflow: hidden;
+
+  height: 100%;
+  /* overflow: hidden; */
   border-radius: 10px;
 }
 .videodiv video {
   width: 100%;
+  overflow: hidden;
   object-fit: cover;
-  height: 100%;
+  border-radius: 10px;
+  height: 60%;
 }
 .shorts {
   width: 100%;
@@ -53,17 +58,22 @@ body {
   display: flex;
 }
 @media (max-width: 425px) {
+  .home {
+    margin-left: 0px;
+  }
   .firstrow {
     flex-direction: column;
   }
   .videodiv {
     width: 100vw;
-    height: 40vh;
-    overflow: hidden;
+    max-height: 40%;
+    height: 60%;
     border-radius: 10px;
   }
+  .videodiv video {
+    height: 80%;
+  }
   .home {
-    margin-left: 0;
     width: 100vw;
   }
   .firstrow {
@@ -72,6 +82,7 @@ body {
   }
   .videodiv {
     border-radius: 0;
+    border-bottom: 1px solid #9999994e;
   }
   .videodivs {
     width: 35vw;
